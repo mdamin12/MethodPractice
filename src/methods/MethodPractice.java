@@ -20,9 +20,29 @@ public class MethodPractice {
 		
 		System.out.println("Q no-7: "+getIndex("This is a String"));
 		
+		System.out.println("Q no-8: "+getChar("This is a String"));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:8
+	 * write a method that take one String input and return a list of all character
+	 * parameter:String text
+	 * returnType:Arraylist<Character>
+	 * ServingBucket:List
+	 */
+	public static ArrayList<Character> getChar(String text){
+		ArrayList<Character>charList = new ArrayList<Character>();
+		
+		for(int i = 0; i < text.length();i++){
+			
+			charList.add(text.charAt(i));	
+		}
+		
+		
+		return charList;
 	}
 	/**
 	 * Q no:7
