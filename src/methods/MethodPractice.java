@@ -14,13 +14,36 @@ public class MethodPractice {
 		
 		System.out.println("Q no-4: "+ getEvenNumber(20));
 		
+		System.out.println("Q no-5: "+getOddNumber(20));
+		
 		
 		
 		
 	}
 	/**
+	 * Q no:5
+	 * write a method that take a number input and return the list of all odd number from 0 to that given number
+	 * parameter:int number
+	 * returnType:ArrayList<Integer>
+	 * ServingBucket:List
+	 */
+	public static ArrayList<Integer> getOddNumber(int number){
+		ArrayList<Integer> oddNumberList = new ArrayList<Integer>();
+		
+		for(int i = 0; i <= number; i++){
+			
+			if(i % 2 == 1){
+				
+				oddNumberList.add(i);
+			}
+		}
+		
+		
+		return oddNumberList; 
+	}
+	/**
 	 * Q no:4
-	 * write a method that a number input and return the list of all even number from to that given number
+	 * write a method that take a number input and return the list of all even number from 0 to that given number
 	 * parameter:int number
 	 * returnType:ArrayList<Integer>
 	 * ServingBucket:list
