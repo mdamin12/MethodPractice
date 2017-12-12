@@ -18,12 +18,31 @@ public class MethodPractice {
 		
 		System.out.println("Q no-6: "+getKilometer(5));
 		
+		System.out.println("Q no-7: "+getIndex("This is a String"));
+		
 		
 		
 		
 	}
 	/**
-	 * Q no:5
+	 * Q no:7
+	 * write a method that take one String input and return a list of all index
+	 * parameter:String text
+	 * returnType:ArrayList<Integer>
+	 * ServingBucket:List
+	 */
+	public static ArrayList<Integer> getIndex(String text){
+		ArrayList<Integer> indexList = new ArrayList<Integer>();
+		
+		for(int i = 0; i < text.length(); i++){
+			
+			indexList.add(i);
+		}
+		
+		return indexList;
+	}
+	/**
+	 * Q no:6
 	 * write a method that take input as mile & return as kilometer
 	 * parameter:double mile
 	 * returnType:double
