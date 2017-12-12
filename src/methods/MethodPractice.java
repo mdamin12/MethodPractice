@@ -1,5 +1,7 @@
 package methods;
 
+import java.util.ArrayList;
+
 public class MethodPractice {
 	
 	public static void main(String[] args){
@@ -10,9 +12,32 @@ public class MethodPractice {
 		
 		System.out.println("Q no-3: "+ getLowerCase("THIS IS A STRING"));
 		
+		System.out.println("Q no-4: "+ getEvenNumber(20));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:4
+	 * write a method that a number input and return the list of all even number from to that given number
+	 * parameter:int number
+	 * returnType:ArrayList<Integer>
+	 * ServingBucket:list
+	 */
+	public static ArrayList<Integer> getEvenNumber(int number){
+		ArrayList<Integer> evenNumberList = new ArrayList<Integer>();
+		
+		for(int i = 0; i <= number; i++){
+			
+			if(i % 2 == 0){
+				evenNumberList.add(i);
+				
+			}
+		}
+		
+		
+		return evenNumberList;
 	}
 	/**
 	 * Q no:3
