@@ -16,9 +16,26 @@ public class MethodPractice {
 		
 		System.out.println("Q no-5: "+getOddNumber(20));
 		
+		System.out.println("Q no-6: "+getKilometer(5));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:5
+	 * write a method that take input as mile & return as kilometer
+	 * parameter:double mile
+	 * returnType:double
+	 * ServingBucket:variable
+	 */
+	public static double getKilometer(double mile){
+		double kilometer = 0;
+		
+		kilometer = mile * 1.609;
+		
+		
+		return kilometer;
 	}
 	/**
 	 * Q no:5
