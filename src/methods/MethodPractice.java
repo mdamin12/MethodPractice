@@ -22,9 +22,29 @@ public class MethodPractice {
 		
 		System.out.println("Q no-8: "+getChar("This is a String"));
 		
+		System.out.println("Q no-9: "+getSum(20));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:9
+	 * write a method that take one number input and return the sum of 1 to that given number
+	 * parameter:int number
+	 * returnType:int
+	 * ServingBucket:variable
+	 */
+	public static int getSum(int number){
+		int sum = 0;
+		
+		for( int i = 1; i <= number; i++){
+			
+			sum = sum +i;
+		}
+		
+		
+		return sum;
 	}
 	/**
 	 * Q no:8
