@@ -6,9 +6,26 @@ public class MethodPractice {
 		
 		System.out.println("Q no-1:" +getName("ma a amin"));
 		
+		System.out.println("Q no-2:"+ getUpperCase("this is a String"));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:2 
+	 * write a method that take one String input and return same String in upper case
+	 * parameter:String text
+	 * returnType:String
+	 * ServingBucket:variable
+	 */
+	public static String getUpperCase(String text){
+		String upperCaseText = null;
+		
+		upperCaseText = text.toUpperCase();
+		
+		
+		return upperCaseText;
 	}
 	
 	/**
