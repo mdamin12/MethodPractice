@@ -38,16 +38,40 @@ public class MethodPractice {
 		int[] numberArray = { 20,10,3,40,15,50,35 };
 		System.out.println("Q no-15: "+getMaxNumber(numberArray));
 		
+		int[] numArray = { 30,10,5,60,50,35 };
+		System.out.println("Q no-16: "+getMinNumber(numArray));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:16
+	 * write a method that take one number array input and return the Min number
+	 * parameter:int[] numArray
+	 * returnType:int
+	 * SerVingBucket:variable
+	 */
+	public static int getMinNumber(int[] numArray){
+		int minNumber = numArray[0];
+		
+		for(int i = 0; i < numArray.length; i++){
+			
+			if(minNumber > numArray[i]){
+				
+				minNumber = numArray[i];
+			}
+		}
+		
+		
+		return minNumber;
 	}
 	/**
 	 * Q no:15
 	 * write a method that take one number array input and return the max number
 	 * parameter:int[] numberArray
 	 * returnType:int
-	 * SerVingBucket:ServingBucket
+	 * SerVingBucket:variable
 	 */
 	public static int getMaxNumber(int[] numberArray){
 		int maxNumber = numberArray[0];
