@@ -33,9 +33,36 @@ public class MethodPractice {
 		
 		System.out.println("Q no-13: "+getNumber(25));
 		
+		System.out.println("Q no-14: "+getFizzBuzz(21));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:14
+	 * write a method that take one number input and return 'fizz' if the given number divided by 5
+	 * and return 'buzz'if the given number divided by 5 && 3 otherwise return 'fizz buzz'
+	 * parameter:int number
+	 * returnType:String
+	 * ServingBucket:variable
+	 */
+	public static String getFizzBuzz(int number){
+		String message = null;
+		
+		if(number % 5 == 0 && number % 3 == 0){
+			message = "buzz";
+			
+		}else if(number % 5 == 0){
+			message = "fizz";
+			
+		}else{
+			message = "fizz buzz";
+		}
+		
+		
+		
+		return message;
 	}
 	/**
 	 * Q no:13
