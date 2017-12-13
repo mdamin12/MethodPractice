@@ -35,9 +35,33 @@ public class MethodPractice {
 		
 		System.out.println("Q no-14: "+getFizzBuzz(21));
 		
+		int[] numberArray = { 20,10,3,40,15,50,35 };
+		System.out.println("Q no-15: "+getMaxNumber(numberArray));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:15
+	 * write a method that take one number array input and return the max number
+	 * parameter:int[] numberArray
+	 * returnType:int
+	 * SerVingBucket:ServingBucket
+	 */
+	public static int getMaxNumber(int[] numberArray){
+		int maxNumber = numberArray[0];
+		
+		for(int i = 0; i < numberArray.length; i++){
+			
+			if(maxNumber < numberArray[i]){
+				
+				maxNumber = numberArray[i]; 
+			}
+		}
+		
+		
+		return maxNumber;
 	}
 	/**
 	 * Q no:14
