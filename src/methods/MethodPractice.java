@@ -41,9 +41,26 @@ public class MethodPractice {
 		int[] numArray = { 30,10,5,60,50,35 };
 		System.out.println("Q no-16: "+getMinNumber(numArray));
 		
+		System.out.println("Q no-17: "+getConvertedString(10));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:17
+	 * write a method that take a number input and return the same value as a String
+	 * parameter:int number
+	 * returnType:String
+	 * ServingBucket:variable
+	 */
+	public static String getConvertedString( int number){
+		String text = null;
+		
+		text = String.valueOf(number);
+		
+		
+		return text;
 	}
 	/**
 	 * Q no:16
