@@ -31,9 +31,29 @@ public class MethodPractice {
 		
 		System.out.println("Q no-12: "+ Arrays.toString(getNumberArrayTwo(20)));
 		
+		System.out.println("Q no-13: "+getNumber(25));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:13
+	 * write a method that take one number input and return a number list starting from 0 to that given number
+	 * parameter:int number
+	 * returnType:List
+	 * ServingBucket:list
+	 */
+	public static ArrayList<Integer> getNumber(int number){
+		ArrayList<Integer> numberList = new ArrayList<Integer>();
+		
+		for(int i = 0; i <= number; i++){
+			
+			numberList.add(i);
+		}
+		
+		
+		return numberList;
 	}
 	/**
 	 * Q no:12
