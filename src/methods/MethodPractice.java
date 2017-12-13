@@ -24,9 +24,26 @@ public class MethodPractice {
 		
 		System.out.println("Q no-9: "+getSum(20));
 		
+		System.out.println("Q no-10:"+ getSquare(10));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:10
+	 * write a method that take number input and return square of the given number
+	 * parameter:int number
+	 * returnType:int
+	 * ServingBucket:variable
+	 */
+	public static int getSquare(int number){
+		int square = 0;
+		
+		square = number * number;
+		
+		
+		return square;
 	}
 	/**
 	 * Q no:9
