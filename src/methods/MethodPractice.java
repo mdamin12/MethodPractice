@@ -29,9 +29,29 @@ public class MethodPractice {
 		
 		System.out.println("Q  no-11:"+ Arrays.toString(getNumberArray(20)));
 		
+		System.out.println("Q no-12: "+ Arrays.toString(getNumberArrayTwo(20)));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:12
+	 * write a method that take one number input and return an array that contains 1 to given number
+	 * parameter:int number
+	 * returnType:int[]
+	 * ServingBucket:array
+	 */
+	public static int[] getNumberArrayTwo(int number){
+		int[] numberArray = new int[number];
+		
+		for(int i = 1; i <= number; i++){
+			
+			numberArray[i -1] = i;
+		}
+		
+		
+		return numberArray;
 	}
 	/**
 	 * Q no:11
