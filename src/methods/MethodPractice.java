@@ -45,9 +45,25 @@ public class MethodPractice {
 		
 		System.out.println("Q no-18: "+getTextValue("15"));
 		
+		System.out.println("Q no-19: "+SearchCharA("This is a String"));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:19
+	 * write a method that take String input & return true if it contains char 'a' otherwise return false
+	 * parameter:String text
+	 * returnType:boolean
+	 * ServingBucket:variable
+	 */
+	public static boolean SearchCharA(String text){
+		boolean result = false;
+		
+		
+		
+		return result;
 	}
 	/**
 	 * Q no:18
