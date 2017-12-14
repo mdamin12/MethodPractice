@@ -43,9 +43,27 @@ public class MethodPractice {
 		
 		System.out.println("Q no-17: "+getConvertedString(10));
 		
+		System.out.println("Q no-18: "+getTextValue("15"));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:18
+	 * write a method that take a String representation of number input and return the same value as
+	 *  an Integer
+	 *  parameter:String number
+	 *  returnType;int
+	 * ServingBucket:variable
+	 */
+	public static int getTextValue(String number){
+		int textValue = 0;
+		
+		textValue = Integer.valueOf(number);
+		
+		
+		return textValue;
 	}
 	/**
 	 * Q no:17
