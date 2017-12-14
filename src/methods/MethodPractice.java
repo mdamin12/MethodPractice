@@ -47,9 +47,29 @@ public class MethodPractice {
 		
 		System.out.println("Q no-19: "+SearchCharA("This is a String"));
 		
+		System.out.println("Q no-20: "+getSum("This is a String"));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:20
+	 * write a method that a one String input and return the sum of all index
+	 * parameter:String text
+	 * returnType:int
+	 * ServingBucket;variable
+	 */
+	public static int getSum(String text){
+		int result = 0;
+		
+		for(int i = 0; i < text.length(); i++){
+			
+			result = result + i;
+		}
+		
+		
+		return result;
 	}
 	/**
 	 * Q no:19
