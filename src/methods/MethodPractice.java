@@ -53,9 +53,25 @@ public class MethodPractice {
 		
 		System.out.println("Q no-22: "+getFirstFiveChar("This is a String"));
 		
+		System.out.println("Q no-23: "+getFithToTenth("This is a String"));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:23
+	 * write a method that take one String input and return fifth to tenth character as a String
+	 * parameter:String text
+	 * returnType:String
+	 * ServingBucket:variable
+	 */
+	public static String getFithToTenth(String text){
+		String subsString = null;
+		
+		subsString = text.substring(4, 10);
+		
+		return subsString;
 	}
 	/**
 	 * Q no:22
