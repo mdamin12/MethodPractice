@@ -57,10 +57,28 @@ public class MethodPractice {
 		
 		System.out.println("Q no-24: "+getWord("This is a String"));
 		
+		System.out.println("Q no-25: "+getFirstWord("This is a String"));
 		
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:25
+	 * write a method that take one String input and return first word
+	 * parameter:String text
+	 * returnType:String
+	 * ServingBucket:variable
+	 */
+	public static String getFirstWord(String text){
+		String firstWord = null;
+		
+		String[] wordArray = text.split(" ");
+		
+		firstWord = wordArray[0];
+		
+		return firstWord;
 	}
 	/**
 	 * Q no:24
