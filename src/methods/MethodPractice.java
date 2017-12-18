@@ -51,9 +51,28 @@ public class MethodPractice {
 		
 		System.out.println("Q no-21: "+getLastFiveChar("This is a String"));
 		
+		System.out.println("Q no-22: "+getFirstFiveChar("This is a String"));
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:22
+	 * write a method that take one String input and return a List Firts Five Character
+	 * parameter:String text
+	 * returnType:ArrayList<Character>
+	 * SeringBucket:List
+	 */
+	public static ArrayList<Character> getFirstFiveChar(String text){
+		ArrayList<Character> charList = new ArrayList<Character>();
+		
+		for(int i = 0; i <= 4; i++){
+			
+			charList.add(text.charAt(i));
+		}
+		
+		return charList;
 	}
 	/**
 	 * Q no:21
@@ -69,8 +88,6 @@ public class MethodPractice {
 			
 			charList.add(text.charAt(i));
 		}
-		
-		
 		
 		return charList;
 	}
@@ -89,7 +106,6 @@ public class MethodPractice {
 			result = result + i;
 		}
 		
-		
 		return result;
 	}
 	/**
@@ -102,7 +118,9 @@ public class MethodPractice {
 	public static boolean SearchCharA(String text){
 		boolean result = false;
 		
+		text = text.toLowerCase();
 		
+		result = text.contains("a");
 		
 		return result;
 	}
@@ -119,7 +137,6 @@ public class MethodPractice {
 		
 		textValue = Integer.valueOf(number);
 		
-		
 		return textValue;
 	}
 	/**
@@ -133,7 +150,6 @@ public class MethodPractice {
 		String text = null;
 		
 		text = String.valueOf(number);
-		
 		
 		return text;
 	}
@@ -155,7 +171,6 @@ public class MethodPractice {
 			}
 		}
 		
-		
 		return minNumber;
 	}
 	/**
@@ -175,7 +190,6 @@ public class MethodPractice {
 				maxNumber = numberArray[i]; 
 			}
 		}
-		
 		
 		return maxNumber;
 	}
@@ -200,8 +214,6 @@ public class MethodPractice {
 			message = "fizz buzz";
 		}
 		
-		
-		
 		return message;
 	}
 	/**
@@ -218,7 +230,6 @@ public class MethodPractice {
 			
 			numberList.add(i);
 		}
-		
 		
 		return numberList;
 	}
@@ -237,7 +248,6 @@ public class MethodPractice {
 			numberArray[i -1] = i;
 		}
 		
-		
 		return numberArray;
 	}
 	/**
@@ -255,7 +265,6 @@ public class MethodPractice {
 			numberArray[i] = i;
 		}
 		
-		
 		return numberArray;
 	}
 	/**
@@ -269,7 +278,6 @@ public class MethodPractice {
 		int square = 0;
 		
 		square = number * number;
-		
 		
 		return square;
 	}
@@ -288,7 +296,6 @@ public class MethodPractice {
 			sum = sum +i;
 		}
 		
-		
 		return sum;
 	}
 	/**
@@ -305,8 +312,7 @@ public class MethodPractice {
 			
 			charList.add(text.charAt(i));	
 		}
-		
-		
+
 		return charList;
 	}
 	/**
@@ -337,8 +343,7 @@ public class MethodPractice {
 		double kilometer = 0;
 		
 		kilometer = mile * 1.609;
-		
-		
+	
 		return kilometer;
 	}
 	/**
@@ -358,8 +363,7 @@ public class MethodPractice {
 				oddNumberList.add(i);
 			}
 		}
-		
-		
+	
 		return oddNumberList; 
 	}
 	/**
@@ -379,8 +383,7 @@ public class MethodPractice {
 				
 			}
 		}
-		
-		
+
 		return evenNumberList;
 	}
 	/**
