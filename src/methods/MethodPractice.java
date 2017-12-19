@@ -63,10 +63,35 @@ public class MethodPractice {
 		
 		System.out.println("Q no-27: "+getCharCount("This is a String", 'a'));
 		
+		System.out.println("Q no-28: "+searchSentence("This is a String", "is"));
 		
 		
 		
 		
+		
+		
+		
+	}
+	/**
+	 * Q no:28
+	 * write a method that take one String & one word input and return true if that sentence contain given word 
+	 * otherwise return false
+	 * parameter:String text, String word
+	 * returnType:boolean
+	 * ServingBucket:variable
+	 */
+	public static boolean searchSentence(String text, String word){
+		boolean sentence = false;
+		
+		String[] wordArray = text.split(" ");
+		
+		for(int i = 0; i < wordArray.length; i++){
+			
+			if(wordArray[i].equalsIgnoreCase(word)){
+				sentence = true;
+			}
+		}
+		return sentence;
 	}
 	/**
 	 * Q no:27
