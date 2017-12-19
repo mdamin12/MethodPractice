@@ -65,12 +65,36 @@ public class MethodPractice {
 		
 		System.out.println("Q no-28: "+searchSentence("This is a String", "is"));
 		
+		System.out.println("Q no-29: "+getConsonantCount("This is a String"));
 		
 		
 		
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:29
+	 * write a method that take one String input & return the count of all consonant
+	 * parameter:String text
+	 * returnType:int
+	 * ServingBucket;variable
+	 */
+	public static int getConsonantCount(String text){
+		int count = 0;
+		
+		String consonant = "bcdfghjklmnpqrstvwxyz";
+		text = text.toLowerCase();
+		
+		for(int i = 0; i < text.length(); i++){
+			String character = String.valueOf(text.charAt(i));
+			
+			if(consonant.contains(character)){
+				count = count + 1;
+			}
+		}
+		return count;
 	}
 	/**
 	 * Q no:28
