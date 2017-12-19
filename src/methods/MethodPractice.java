@@ -61,10 +61,35 @@ public class MethodPractice {
 		
 		System.out.println("Q no-26: "+getWordCount("This is a String", "is"));
 		
+		System.out.println("Q no-27: "+getCharCount("This is a String", 'a'));
 		
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:27
+	 * write a method that take one String & one Character input and return the count of that given number
+	 * parameter:String text, char Character
+	 * returnType:int
+	 * ServingBucket:variable
+	 */
+	public static int getCharCount(String text, char character){
+		int count = 0;
+		
+		text = text.toLowerCase();
+		character = Character.toLowerCase(character);
+		
+		for(int i = 0; i < text.length(); i++){
+			
+			if(text.charAt(i) == character){
+				
+				count = count+1;
+			}
+		}
+
+		return count;
 	}
 	/**
 	 * Q no:26
