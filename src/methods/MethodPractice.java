@@ -59,10 +59,33 @@ public class MethodPractice {
 		
 		System.out.println("Q no-25: "+getFirstWord("This is a String"));
 		
+		System.out.println("Q no-26: "+getWordCount("This is a String", "is"));
 		
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:26
+	 * write a method that take one String & one word input and return the count of that given word
+	 * parameter:String text, String word
+	 * returnType:int
+	 * ServingBucket:variable
+	 */
+	public static int getWordCount(String text, String word){
+		int count = 0;
+		
+		String[] wordArray = text.split(" ");
+		
+		for(int i = 0; i < wordArray.length; i++){
+			
+			if(wordArray[i].equalsIgnoreCase(word)){
+				count = count+1;
+			}
+		}
+		
+		return count;
 	}
 	/**
 	 * Q no:25
@@ -95,7 +118,6 @@ public class MethodPractice {
 			for(int i = 0; i < wordArray.length; i++){
 				
 				wordList.add(wordArray[i]);
-				
 			}
 			
 			return wordList;
