@@ -67,12 +67,36 @@ public class MethodPractice {
 		
 		System.out.println("Q no-29: "+getConsonantCount("This is a String"));
 		
+		System.out.println("Q no-30: "+getVowelCount("This is a String"));
 		
 		
 		
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:30
+	 * write a method that take that take one String input and return the count of all vowels
+	 * parameter:String text
+	 * returnType;int
+	 * ServingBucket:variable
+	 */
+	public static int getVowelCount(String text){
+		int count = 0;
+		
+		String vowel = "aeiou";
+		text = text.toLowerCase();
+		
+		for(int i = 0; i < text.length(); i++){
+			String character = String.valueOf(text.charAt(i));
+			
+			if(vowel.contains(character)){
+				count = count+1;
+			}
+		}
+		return count;
 	}
 	/**
 	 * Q no:29
