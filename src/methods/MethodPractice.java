@@ -71,12 +71,157 @@ public class MethodPractice {
 		
 		System.out.println("Q no-31: "+getUpperCaseChar("This Is a String"));
 		
+		System.out.println("Q no-32: "+getCharCountTwo("This is a String"));
+		
+		System.out.println("Q no-33: "+getRepeatedChar("This is a String"));
+		
+		System.out.println("Q no-34: "+getUniqueChar("This is a String"));
+		
+		int[] numberArrayFour = { 10,15,20,40,50};
+		System.out.println("Q no-35: "+getSum(numberArrayFour));
+		
+		ArrayList<Integer> numList = new ArrayList<Integer>();
+		numList.add(10);
+		numList.add(20);
+		numList.add(25);
+		numList.add(30);
+		numList.add(35);
+		System.out.println("Q no-36: "+getSum(numList));
+		
+		System.out.println("Q no-37: "+getReverseString("This is a String"));
 		
 		
 		
 		
 		
 		
+		
+		
+		
+	}
+	/**
+	 * Q no:37
+	 * write a method that take one String input and the return same String in reverse order
+	 * parameter:String text
+	 * returnType:String
+	 * servingBucket:variable
+	 */
+	public static String getReverseString(String text){
+		String reverseString = "";
+		
+		for(int i = text.length()-1; i >= 0; i--){
+			
+			reverseString = reverseString + text.charAt(i);
+		}
+		return reverseString;
+	}
+	/**
+	 * Q no:36
+	 * write a method that take one integer type list input and return sum of all values
+	 * parameter:ArrayList<Integer> numList
+	 * returnType:int
+	 * servingBucket:variable
+	 */
+	public static int getSum(ArrayList<Integer> numList){
+		int sum = 0;
+		
+		for(int i = 0; i < numList.size(); i++){
+			
+			sum = sum + numList.get(i);
+		}
+		return sum;
+	}
+	/**
+	 * Q no:35
+	 * write a method that take one integer type array input and return sum of all values
+	 * parameter:int[] numberArray
+	 * returnType:int
+	 * servingBucket:variable
+	 */
+	public static int getSum(int[] numberArray){
+		int sum = 0;
+		
+		for(int i = 0; i < numberArray.length; i++){
+			
+			sum = sum + numberArray[i];
+		}
+		return sum;
+	}
+	/**
+	 * Q no:34
+	 * write a method that take one String input & return all the unique characters without whitespace
+	 * parameter:String text
+	 * returnType:String
+	 * returnType:variable
+	 */
+	public static String getUniqueChar(String text){
+		String uniqueChar = "";
+		
+		text = text.replaceAll(" ", "");
+		text = text.toLowerCase();
+		
+		for(int i = 0; i < text.length(); i++){
+			
+			for(int j = i+1; j < text.length(); j++){
+				
+				if(text.charAt(i) == text.charAt(j)){
+					String Character = String.valueOf(text.charAt(i));
+					
+					if(uniqueChar.contains(Character)){
+						uniqueChar = uniqueChar.replaceAll(Character, "");
+						break;
+					}
+				}
+				
+			}
+		}
+		
+		return uniqueChar;
+	}
+	/**
+	 * Q no:33
+	 * write a method that take one String input & return all repeated characters without whitespace
+	 * parameter:String text
+	 * returnType:String
+	 * servingBucket:variable
+	 */
+	public static String getRepeatedChar(String text){
+		String repeatedChar = "";
+		
+		text = text.replaceAll(" ", "");
+		text = text.toLowerCase();
+		
+		for(int i = 0; i < text.length(); i++){
+			for(int j = i+1; j < text.length(); j++){
+				
+				if(text.charAt(i) == text.charAt(j)){
+					String Character = String.valueOf(text.charAt(i));
+					
+					if(! repeatedChar.contains(Character)){
+						repeatedChar = repeatedChar + text.charAt(i);
+					}
+					
+				}
+				
+			}
+		}
+		return repeatedChar;
+	}
+	/**
+	 * Q no: 32
+	 * write a method that take one String input & return the count of characters without whitespace
+	 * parameter:String text
+	 * returnType:int
+	 * ServingBucket:variable
+	 */
+	public static int getCharCountTwo(String text){
+		int count = 0;
+		
+		text = text.replaceAll(" ", "");
+		
+		count = text.length();
+		
+		return count;
 	}
 	/**
 	 * Q no:31
