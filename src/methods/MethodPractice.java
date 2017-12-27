@@ -90,6 +90,19 @@ public class MethodPractice {
 		
 		System.out.println("Q no-37: "+getReverseString("This is a String"));
 		
+		ArrayList<Integer> numListFour = new ArrayList<Integer>();
+		numListFour.add(15);
+		numListFour.add(20);
+		numListFour.add(30);
+		numListFour.add(35);
+		numListFour.add(40);
+		System.out.println("Q no-38: "+Arrays.toString(convertedListToArray(numListFour)));
+		
+		int[] numberArrayFive = { 10,20,30,40,50,60};
+		System.out.println("Q no-39: "+getConvertedToList(numberArrayFive));
+		
+		int[] numberArraySix = { 40,10,35,15,80,60,20};
+		System.out.println("Q no-40: "+Arrays.toString(getSortedArray(numberArraySix)));
 		
 		
 		
@@ -98,6 +111,53 @@ public class MethodPractice {
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:40
+	 * write a method that take one number array input and return the sorted array
+	 * parameter:int[] numberArray
+	 * returnType:int[]
+	 * ServingBucket:array
+	 */
+	public static int[] getSortedArray(int[] numberArray){
+		int[] sortedArray = new int[numberArray.length];
+		
+		Arrays.sort(numberArray);
+		sortedArray = numberArray;
+		
+		return sortedArray;
+	}
+	/**
+	 * Q no:39
+	 * write a method that take one number Array input then convert that to a list and return list
+	 * parameter:int[] numberArray
+	 * returnType:ArrayList<Integer>
+	 * ServingBucket:list
+	 */
+	public static ArrayList<Integer> getConvertedToList(int[] numberArray){
+		ArrayList<Integer> numberList = new ArrayList<Integer>();
+		
+		for(int i = 0; i < numberArray.length; i++){
+			
+			numberList.add(numberArray[i]);
+		}
+		return numberList;
+	}
+	/**
+	 * Q no:38
+	 * write a method that take one number list input then convert that to an Array and return that Array
+	 * parameter:ArrayList<Integer> numList
+	 * returnType:int[]
+	 * servingBucket:Array
+	 */
+	public static int[] convertedListToArray(ArrayList<Integer> numList){
+		int[] numberArray = new int[numList.size()];
+		
+		for(int i = 0; i < numList.size();i++){
+			numberArray[i] = numList.get(i);
+		}
+		return numberArray;
 	}
 	/**
 	 * Q no:37
