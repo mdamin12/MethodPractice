@@ -114,6 +114,8 @@ public class MethodPractice {
 		numListFive.add(40);
 		System.out.println("Q no-41: "+getSortedList(numListFive));
 		
+		int[] numberArraySeven = { 30,40,15,80,60,70,20};
+		System.out.println("Q no-42: "+Arrays.toString(getBubbleSortedArray(numberArraySeven)));
 		
 		
 		
@@ -122,6 +124,34 @@ public class MethodPractice {
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:42
+	 * write a method that take one numberArray input and return the bubble sorted array
+	 * parameter:int[] numberArray
+	 * returnType:int[]
+	 * servingBucket:array
+	 */
+	public static int[] getBubbleSortedArray(int[] numberArray){
+		int[] bubbleSortedArray = new int[numberArray.length];
+		
+		for(int i = 0; i < numberArray.length; i++){
+			
+			for(int j = i+1; j < numberArray.length; j++){
+				
+				if(numberArray[i] < numberArray[j]){
+					int sortedValue = numberArray[i];
+					
+					numberArray[i] = numberArray[j];
+					numberArray[j] = sortedValue;
+				}
+			}
+		}
+		bubbleSortedArray = numberArray;
+		
+		
+		return bubbleSortedArray;
 	}
 	/**
 	 * Q no;41
