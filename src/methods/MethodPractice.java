@@ -2,6 +2,7 @@ package methods;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class MethodPractice {
 	
@@ -104,6 +105,14 @@ public class MethodPractice {
 		int[] numberArraySix = { 40,10,35,15,80,60,20};
 		System.out.println("Q no-40: "+Arrays.toString(getSortedArray(numberArraySix)));
 		
+		ArrayList<Integer> numListFive = new ArrayList<Integer>();
+		numListFive.add(50);
+		numListFive.add(80);
+		numListFive.add(10);
+		numListFive.add(30);
+		numListFive.add(20);
+		numListFive.add(40);
+		System.out.println("Q no-41: "+getSortedList(numListFive));
 		
 		
 		
@@ -112,6 +121,22 @@ public class MethodPractice {
 		
 		
 		
+		
+	}
+	/**
+	 * Q no;41
+	 * write a method that take one number List input and return the sorted List
+	 * parameter: ArrayList<Integer> numList
+	 * returnType:ArrayList<Integer
+	 * servingBucket:List
+	 */
+	public static ArrayList<Integer> getSortedList(ArrayList<Integer>numList){
+		ArrayList<Integer> sortedList = new ArrayList<Integer>();
+		
+		Collections.sort(numList);
+		sortedList = numList;
+		
+		return sortedList;
 	}
 	/**
 	 * Q no:40
