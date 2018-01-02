@@ -121,6 +121,7 @@ public class MethodPractice {
 		
 		System.out.println("Q no-44: "+getNumListFromString("This is a String 50 which contain 30"));
 		
+		System.out.println("Q no-45: "+getEmailAddressCollect("This is a String alamin.hawlader69@gmail.com which 20"));
 		
 		
 		
@@ -129,6 +130,27 @@ public class MethodPractice {
 		
 		
 		
+	}
+	/**
+	 * Q no:45
+	 * write a method that take one String input which contain an email address then collect and return that email
+	 * parameter:String text
+	 * returnType:String
+	 * servingBucket:variable
+	 */
+	public static String getEmailAddressCollect(String text){
+		String email = null;
+		
+		String[] wordArray = text.split(" ");
+		
+		for(int i = 0; i < wordArray.length; i++){
+			
+			if(wordArray[i].matches("[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+")){
+				
+				email = wordArray[i];
+			}
+		}
+		return email;
 	}
 	/**
 	 * Q no:44
