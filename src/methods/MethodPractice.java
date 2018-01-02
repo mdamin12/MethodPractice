@@ -117,6 +117,9 @@ public class MethodPractice {
 		int[] numberArraySeven = { 30,40,15,80,60,70,20};
 		System.out.println("Q no-42: "+Arrays.toString(getBubbleSortedArray(numberArraySeven)));
 		
+		System.out.println("Q no-43: "+getContainValue("This is a String which contain 50"));
+		
+		System.out.println("Q no-44: "+getNumListFromString("This is a String 50 which contain 30"));
 		
 		
 		
@@ -125,6 +128,54 @@ public class MethodPractice {
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:44
+	 * write a method that take one String input which contain multiple numbers then collect all of those numbers and 
+	  return in a list
+	 * parameter:String text
+	 * returnType:ArrayList<Integer>
+	 * servingBucket: variable
+	 */
+	public static ArrayList<Integer> getNumListFromString(String text){
+		ArrayList<Integer> numList = new ArrayList<Integer>();
+		
+		String[] wordArray = text.split(" ");
+		
+		for(int i = 0; i < wordArray.length; i++){
+			
+			if(wordArray[i].matches("[0-9]+")){
+				
+				int number = Integer.valueOf(wordArray[i]);
+				
+				numList.add(number);
+			}
+		}
+		return numList;
+	}
+	/**
+	 * Q no:43
+	 * write a method that take one String input which contains a number and return that number as integer
+	 * parameter:String number
+	 * returnType:int
+	 * servingBucket:variable
+	 */
+	public static int getContainValue(String number){
+		int containValue = 0;
+		
+		String[] wordArray = number.split(" ");
+		
+		for(int i = 0; i < wordArray.length; i++){
+			
+			if(wordArray[i].matches("[0-9]+")){
+				
+				int num = Integer.valueOf(wordArray[i]);
+				
+				containValue = num;
+			}
+		}
+		return containValue;
 	}
 	/**
 	 * Q no:42
