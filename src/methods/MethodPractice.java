@@ -123,6 +123,7 @@ public class MethodPractice {
 		
 		System.out.println("Q no-45: "+getEmailAddressCollect("This is a String alamin.hawlader69@gmail.com which 20"));
 		
+		System.out.println("Q no-46: "+getAlternateChar("ThisisaString"));
 		
 		
 		
@@ -130,6 +131,23 @@ public class MethodPractice {
 		
 		
 		
+		
+	}
+	/**
+	 * Q no:46
+	 * write a method that one String input and return the alternate characters as a string
+	 * parameter:String text
+	 * returnType: String
+	 * servingBucket:variable
+	 */
+	public static String getAlternateChar(String text){
+		String alternateChar = "";
+		
+		for(int i = 0; i < text.length(); i= i+2){
+			
+			alternateChar = alternateChar + text.charAt(i);
+		}
+		return alternateChar;
 	}
 	/**
 	 * Q no:45
