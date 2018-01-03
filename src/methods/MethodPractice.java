@@ -125,6 +125,7 @@ public class MethodPractice {
 		
 		System.out.println("Q no-46: "+getAlternateChar("ThisisaString"));
 		
+		System.out.println("Q no-47: "+getAltenativeChar("ThisIsaString"));
 		
 		
 		
@@ -132,6 +133,30 @@ public class MethodPractice {
 		
 		
 		
+		
+		
+	}
+	/**
+	 * Q no:47
+	 * write a method that take one String input and return the same String by making uppercase of all alternative 
+	  characters and rest of the characters in lowercase
+	 * parameter:String text
+	 * returnType: String
+	 * servingBucket:variable
+	 */
+	public static String getAltenativeChar(String text){
+		String alternativeChar = "";
+		
+		for(int i = 0; i < text.length(); i++){
+			
+			if(i % 2 == 0){
+				alternativeChar = alternativeChar + Character.toUpperCase(text.charAt(i));
+				
+			}else if( i % 2 == 1){
+				alternativeChar = alternativeChar + Character.toLowerCase(text.charAt(i));
+			}
+		}
+		return alternativeChar;
 	}
 	/**
 	 * Q no:46
